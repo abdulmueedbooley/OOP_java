@@ -1,7 +1,7 @@
 public class Car{
-    String model = "Ford";
-    String make = "Mustang";
-    Boolean is_running = false;
+    String model;
+    String make;
+    Boolean is_running;
 
     void start(){
         is_running = true;
@@ -13,5 +13,11 @@ public class Car{
         is_running = false;
         System.out.println(is_running);
         System.out.println("The car is stopping");
+    }
+
+    Car(String model, String make) {
+        this.model = model;
+        this.make = make;
+        this.is_running = true;
     }
 }
